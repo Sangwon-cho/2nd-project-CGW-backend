@@ -1,4 +1,3 @@
-const { compareSync } = require("bcrypt");
 const { sqlDataSource } = require("./data-source");
 
 const getTimeBymovieIdAndbranchIdAndDate = async (movie_id, branch_id) => {
@@ -10,7 +9,6 @@ const getTimeBymovieIdAndbranchIdAndDate = async (movie_id, branch_id) => {
     JSON_ARRAYAGG(
         JSON_OBJECT(
         "time_id",t.id,
-        "date",d.name,
         "time",t.name)) AS time
 FROM movies m
 LEFT JOIN movies_branches_rooms mbr ON m.id = mbr.movie_id
@@ -24,21 +22,6 @@ WHERE m.id = ? AND branches.id = ?
 GROUP BY d.id
     `,
     [movie_id, branch_id]
-  );
-};
-
-const getDetail = async (movie_id) => {
-  return await sqlDataSource.query(
-    `
-    SELECT
-    m.thumbnail,
-    m.title,
-    m.rate,
-    m.ageLimit
-    FROM movies m
-    WHERE m.id = ?
-    `,
-    [movie_id]
   );
 };
 
@@ -111,4 +94,4 @@ const getMovieOptionId = async (movie_id, branch_id, date_id, time_id) => {
   return { movieOption_id, reserved_seat_id, seat, movie };
 };
 
-module.exports = { getTimeBymovieIdAndbranchIdAndDate, getDetail, getMovieOptionId };
+module.exports = { getTimeBymovieIdAndbranchIdAndDate, getMovieOptionId };

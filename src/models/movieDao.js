@@ -12,4 +12,19 @@ const getAllList = async () => {
   );
 };
 
-module.exports = { getAllList };
+const getDetail = async (movie_id) => {
+  return await sqlDataSource.query(
+    `
+    SELECT
+    m.thumbnail,
+    m.title,
+    m.rate,
+    m.ageLimit
+    FROM movies m
+    WHERE m.id = ?
+    `,
+    [movie_id]
+  );
+};
+
+module.exports = { getAllList, getDetail };

@@ -4,4 +4,7 @@ const getAllList = async () => {
   return await movieDao.getAllList();
 };
 
-module.exports = { getAllList };
+const getDetail = async (movie_id) => {
+  return await movieDao.getDetail(movie_id);
+};
+module.exports = { getAllList, getDetail };

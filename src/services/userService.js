@@ -11,10 +11,10 @@ const signinWithKakao = async (code) => {
       "Content-type": "application/x-www-form-urlencoded;charset=utf-8",
     },
     data: qs.stringify({
-      client_id: "b0b0a32482b4cef586121097d9d601cf",
+      client_id: process.env.REST_API_KEY,
       code: code,
       grant_type: "authorization_code",
-      redirect_uri: "http://localhost:3000/login/oauth",
+      redirect_uri: process.env.REDIRECT_URI,
     }),
   };
   const response = await axios(

@@ -1,4 +1,4 @@
-const movieOptionDao = require("../models/movie.option.model");
+const movieOptionDao = require("../models/movie.option.Dao");
 const getMovieOptionId = async (movie_id, branch_id, date_id, time_id) => {
   return await movieOptionDao.getMovieOptionId(movie_id, branch_id, date_id, time_id);
 };

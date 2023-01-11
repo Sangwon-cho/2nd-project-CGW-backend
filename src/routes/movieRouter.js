@@ -4,4 +4,5 @@ const router = express.Router();
 const movieController = require("../controllers/movieController");
 
 router.get("", movieController.getAllList);
+router.get("/:movie_id", movieController.getDetail);
 module.exports = router;
