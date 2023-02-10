@@ -1,5 +1,15 @@
 # <p align="center">🎫 CGW
 
+<br>
+
+ ✏️ [프로젝트 스프린트 회고](https://amethyst-mahogany-d44.notion.site/2-4L-c5b4f85ff5004a3b94b8694c0fb4b0be)<br>
+ 
+ ✏️ [프로젝트 협업 회고](https://amethyst-mahogany-d44.notion.site/2-9a816255329f420f80c735de5bffd648)<br>
+ 
+ ✏️ [프로젝트 기능 회고](https://amethyst-mahogany-d44.notion.site/2-166b93098f1245158d023463854ddcc2)<br>
+
+<br>
+
 <p align="center"> 📆 2022.11.28~ 12.9
 
 <br>
@@ -9,10 +19,12 @@
 <img width="1386px" alt="CGW main" align="center" src="https://user-images.githubusercontent.com/110847597/206863973-b5dc727d-037f-4ce5-9c9e-feb21622a4bc.gif"/>
 
 <br>
+<br>
 
 ## 🏆 CGW Goal
 
 - 예매 그 정도, CGW
+
 - 사용자를 위한 더 간편한 예약 페이지
   - 가독성을 높인 UI
   - 지도 API 가까운 영화관 안내
@@ -27,15 +39,25 @@
 `FE` 곽종범, 박지영, 이다빈, 이혜원 <br>
 `BE` 김한솔, 임창현, 조상원
 
-## 📌 CGW Features
+## 🚀 구현 기능
 
-- 🔵 `종범 FE` - 좌석 선택
-- 🔵 `지영 FE` - 소셜 로그인& 지도 API Map 기능
-- 🔵 `다빈 FE` - 영화 예매, 영화 검색
-- 🔵 `혜원 FE` - 결제, 예매내역
-- 🟢 `한솔 BE` - 예매페이지 API, AWS
-- 🟢 `창현 BE` - 카카오결제 API, 주문 API
-- 🟢 `상원 BE` - 카카오로그인 API, 예매페이지 API
+1. 영화 예매, 영화 검색 
+1. 좌석 선택
+1. 소셜 로그인& 지도 API Map 기능
+1. 카카오톡 결제, 예매내역
+
+<br>
+
+## 📌 담당 기능
+
+- `로그인 API`
+  - OAuth 2.0의 Authorization code grant방식을 사용한 로그인 API 구현
+  
+- `예매 페이지 API`
+  - SQL injection를 막기위해  Prepared Statement를 사용하여 SQL문 작성
+  
+- 인증,인가, 지역/상영관에 따른 영화정보 조회, 좌석정보 조회 등 주요기능 모델링 및 기능 개발
+ 
 
 ## 🛠 CGW Tools
 
@@ -52,14 +74,7 @@
 
 <img width="1386" alt="CGW DB" src="https://user-images.githubusercontent.com/110847597/206862017-45340383-0d5d-49d2-aa46-4f8ff1ccf7e7.png">
 
-## 🚀 구현 기능
 
-1. 영화 예매, 영화 검색 
-1. 좌석 선택
-1. 소셜 로그인& 지도 API Map 기능
-1. 카카오톡 결제, 예매내역
-
-<br>
 
 ---
 
