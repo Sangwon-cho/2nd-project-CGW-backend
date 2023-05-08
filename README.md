@@ -51,10 +51,10 @@
 ## 📌 담당 기능
 
 - `로그인 API`
-  - OAuth 2.0의 Authorization code grant방식을 사용한 로그인 API 구현
+  - [OAuth 2.0의 Authorization code grant방식을 사용한 로그인 API 구현](https://github.com/Sangwon-cho/2nd-project-CGW-backend/blob/4f9af6cc84673bb40615cea3c96c8e24379ed26b/src/services/userService.js#L6-L57)
   
 - `예매 페이지 API`
-  - SQL injection를 막기위해  Prepared Statement를 사용하여 SQL문 작성
+  - [SQL injection를 막기위해  Prepared Statement를 사용하여 SQL문 작성](https://github.com/Sangwon-cho/2nd-project-CGW-backend/blob/4f9af6cc84673bb40615cea3c96c8e24379ed26b/src/models/userDao.js#L23-L31)
   
 - 인증,인가, 지역/상영관에 따른 영화정보 조회, 좌석정보 조회 등 주요기능 모델링 및 기능 개발
  
