@@ -72,7 +72,8 @@
 
 ## 👩‍💻 DB Modeling
 
-<img width="1386" alt="CGW DB" src="https://user-images.githubusercontent.com/110847597/206862017-45340383-0d5d-49d2-aa46-4f8ff1ccf7e7.png">
+<img width="1386" alt="CGW DB" src="https://user-images.githubusercontent.com/64992490/236841952-4af2daf9-26c9-4164-b6da-a99fe56acac5.png">
+
 
 
 
