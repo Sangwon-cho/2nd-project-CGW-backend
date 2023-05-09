@@ -16,8 +16,12 @@
 <br>
 <br>
   
-<img width="1386px" alt="CGW main" align="center" src="https://user-images.githubusercontent.com/110847597/206863973-b5dc727d-037f-4ce5-9c9e-feb21622a4bc.gif"/>
+<img width="1000px" alt="CGW main" align="center" src="https://user-images.githubusercontent.com/110847597/206863973-b5dc727d-037f-4ce5-9c9e-feb21622a4bc.gif"/>
 
+ <br>
+ 
+<img width="1000px" alt="CGW main" align="center" src="https://user-images.githubusercontent.com/64992490/237052546-4fad7a91-7b5d-4a9d-970d-a1808a25e5c7.gif"/>
+ 
 <br>
 <br>
 
